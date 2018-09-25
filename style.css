@@ -1,0 +1,46 @@
+#gdprDiv {
+    font-family: sans-serif;
+    background-color: white;
+    width: 600px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -300px;
+    padding-top: 30px;
+    box-shadow: 0px 0px 0px 15px rgba(221 , 219 , 219 , 0.8); 
+    text-align: center;
+    border-radius: 30px; 
+}
+#gdprDiv h1 {
+    text-align: center; 
+    color: #756969;
+    font-size: 36px; 
+    padding-bottom: 40px;
+}
+#gdprDiv span {
+    color: #4c84b3;
+    font-size: 42px;
+}
+#gdprDiv button {
+    color: white; 
+    background: none;
+    background-color: #ff7d5a;
+    border: none;
+    padding: 10px 25px;
+    font: inherit;
+    outline: inherit;
+    border-radius: 20px; 
+    position: relative;
+    font-size: 20px;
+}
+#gdprDiv button:hover, #gdprDiv button:focus {
+    opacity: 0.9;
+}
+#btnAccept {
+    margin-right: 35px;
+}
+#btnCancel {
+    margin-left: 35px; 
+}
