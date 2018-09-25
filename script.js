@@ -1,15 +1,15 @@
 function createGdprDiv() {
-            var div = document.createElement("div");// creating GDPR div
+            var div = document.createElement("div"); // creating GDPR div
             div.setAttribute("id", "gdprDiv");
             document.body.appendChild(div);
             var title = document.createElement("h1");
             title.innerHTML = "<span>GDPR</span><br>Consent";
             div.appendChild(title);  
-            var buttonAccept = document.createElement("button");// creating Accept button 
+            var buttonAccept = document.createElement("button"); // creating Accept button 
             buttonAccept.setAttribute("id", "btnAccept");
             buttonAccept.innerHTML = "Accept";
             div.appendChild(buttonAccept);  
-            var buttonCancel = document.createElement("button"); //creating Cancel button 
+            var buttonCancel = document.createElement("button"); // creating Cancel button 
             buttonCancel.setAttribute("id", "btnCancel");
             buttonCancel.innerHTML = "Cancel";
             div.appendChild(buttonCancel);  
@@ -36,7 +36,7 @@ function createGdprDiv() {
                 window.removeEventListener('scroll', disableScroll); // enable scrolling
             }
             document.getElementById("btnCancel").onclick = function() {
-                Cookies.set("consent", "cancel", { expires: 1 }); // // set consent "cancel" for 1 day
+                Cookies.set("consent", "cancel", { expires: 1 }); // set consent "cancel" for 1 day
                 hideGdprDiv();
                 window.removeEventListener('scroll', disableScroll);  // enable scrolling
             }
