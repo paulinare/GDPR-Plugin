@@ -1,19 +1,19 @@
 function createGdprDiv() {
             var div = document.createElement("div"); // creating GDPR div
-            div.setAttribute("id", "gdprDiv");
+            div.setAttribute("id" , "gdprDiv");
             document.body.appendChild(div);
             var title = document.createElement("h1");
             title.innerHTML = "<span>GDPR</span><br>Consent";
             div.appendChild(title);  
             var buttonAccept = document.createElement("button"); // creating Accept button 
-            buttonAccept.setAttribute("id", "btnAccept");
+            buttonAccept.setAttribute("id" , "btnAccept");
             buttonAccept.innerHTML = "Accept";
             div.appendChild(buttonAccept);  
             var buttonCancel = document.createElement("button"); // creating Cancel button 
-            buttonCancel.setAttribute("id", "btnCancel");
+            buttonCancel.setAttribute("id" , "btnCancel");
             buttonCancel.innerHTML = "Cancel";
             div.appendChild(buttonCancel);  
-            window.addEventListener('scroll', disableScroll); // disable scrolling
+            window.addEventListener('scroll' , disableScroll); // disable scrolling
         } 
         function disableScroll() {
             window.scrollTo(0 , 0); 
@@ -31,14 +31,14 @@ function createGdprDiv() {
         }
         function buttonEvents() { // setting cookies on button click
             document.getElementById("btnAccept").onclick = function() {
-                Cookies.set("consent", "accept", { expires: 1 }); // set consent "accept" for 1 day
+                Cookies.set("consent" , "accept", {expires: 1}); // set consent "accept" for 1 day
                 hideGdprDiv();
-                window.removeEventListener('scroll', disableScroll); // enable scrolling
+                window.removeEventListener('scroll' , disableScroll); // enable scrolling
             }
             document.getElementById("btnCancel").onclick = function() {
-                Cookies.set("consent", "cancel", { expires: 1 }); // set consent "cancel" for 1 day
+                Cookies.set("consent" , "cancel", {expires: 1}); // set consent "cancel" for 1 day
                 hideGdprDiv();
-                window.removeEventListener('scroll', disableScroll);  // enable scrolling
+                window.removeEventListener('scroll' , disableScroll);  // enable scrolling
             }
         }
         window.onload = function() {
