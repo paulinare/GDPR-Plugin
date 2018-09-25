@@ -31,14 +31,12 @@ function createGdprDiv() {
         }
         function buttonEvents() { // setting cookies on button click
             document.getElementById("btnAccept").onclick = function() {
-                var oneMinute = 1/1440;
-                Cookies.set("consent", "accept", { expires: oneMinute }); // POPRAWIĆ CZAS
+                Cookies.set("consent", "accept", { expires: 1 }); // set consent "accept" for 1 day
                 hideGdprDiv();
-                window.removeEventListener('scroll', disableScroll);
+                window.removeEventListener('scroll', disableScroll); // enable scrolling
             }
             document.getElementById("btnCancel").onclick = function() {
-                var oneMinute = 1/1440;
-                Cookies.set("consent", "cancel", { expires: oneMinute }); // POPRAWIĆ CZAS
+                Cookies.set("consent", "cancel", { expires: 1 }); // // set consent "cancel" for 1 day
                 hideGdprDiv();
                 window.removeEventListener('scroll', disableScroll);  // enable scrolling
             }
