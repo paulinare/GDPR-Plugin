@@ -12,6 +12,6 @@ INSTALLATION
 include:
 ```
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-<script src="script.js"></script>
-<link rel="stylesheet" href="style.css">
+<script src="gdpr-overlay-script.js"></script>
+<link rel="stylesheet" href="gdpr-overlay-style.css">
 ```
