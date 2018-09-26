@@ -12,8 +12,8 @@ Installation
 include:
 ```
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-<script src="gdpr-overlay-script.js"></script>
-<link rel="stylesheet" href="gdpr-overlay-style.css">
+<script src="gdpr-overlay.js"></script>
+<link rel="stylesheet" href="gdpr-overlay.css">
 ```
 Tested in:  
 Firefox 62.0.2  
