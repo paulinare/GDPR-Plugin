@@ -3,7 +3,7 @@ JavaScript GDPR Consent box plugin
 using 
 Vanilla JavaScript 
 and 
-API for cookies => https://github.com/js-cookie/js-cookie
+API for cookies (https://github.com/js-cookie/js-cookie)
 
 This plugin creates box which asks user for GDPR Consent and sets it for one day. 
 If site is refreshed after 24 hours, GDPR Consent box shows up again.
