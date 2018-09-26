@@ -20,7 +20,7 @@ var gdprOverlay = { // creating GDPR overlay
         window.scrollTo(0 , 0);
     },
     checkConsentAndShowIfNotDeclared: function() { // checking consent and seting visibility
-        if(Cookies.get("consent") == undefined) {
+        if(Cookies.get("gdprConsent") == undefined) {
             document.getElementById("gdprDiv").style.display = "visible";
         } else {
             document.getElementById("gdprDiv").style.display = "none";
@@ -28,12 +28,12 @@ var gdprOverlay = { // creating GDPR overlay
     },
     bindButtonEvents: function() {
         document.getElementById("btnAccept").onclick = function() {
-            Cookies.set("consent", "accept", { expires: 1 }); // set consent "accept" for 1 day
+            Cookies.set("gdprConsent", "accept", { expires: 1 }); // set consent "accept" for 1 day
             document.getElementById("gdprDiv").style.display = "none";
             window.removeEventListener('scroll', this.disableScroll); // enable scrolling
         }
         document.getElementById("btnCancel").onclick = function() {
-            Cookies.set("consent", "cancel", { expires: 1 }); // set consent "cancel" for 1 day
+            Cookies.set("gdprConsent", "cancel", { expires: 1 }); // set consent "cancel" for 1 day
             document.getElementById("gdprDiv").style.display = "none";
             window.removeEventListener('scroll', this.disableScroll);  // enable scrolling
         }
