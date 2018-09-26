@@ -1,4 +1,4 @@
-var gdprOverlay = {
+var gdprOverlay = { // creating GDPR overlay
     createGdprDiv: function() {
         var div = document.createElement("div"); // creating GDPR div
         div.setAttribute("id", "gdprDiv");
