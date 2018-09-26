@@ -32,12 +32,12 @@ var gdprOverlay = { // creating GDPR overlay
     bindButtonEvents: function() {
         document.getElementById("btnAccept").onclick = function() {
             Cookies.set("consent", "accept", { expires: 1 }); // set consent "accept" for 1 day
-            this.hideGdprDiv();
+            gdprOverlay.hideGdprDiv();
             window.removeEventListener('scroll', this.disableScroll); // enable scrolling
         }
         document.getElementById("btnCancel").onclick = function() {
             Cookies.set("consent", "cancel", { expires: 1 }); // set consent "cancel" for 1 day
-            this.hideGdprDiv();
+            gdprOverlay.hideGdprDiv();
             window.removeEventListener('scroll', this.disableScroll);  // enable scrolling
         }
     },
